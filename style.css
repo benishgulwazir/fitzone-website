@@ -697,7 +697,7 @@ span {
 }
 
 /* Nav links position */
-.nav-links {
+.nav-list {
     display: none; /* Default band rahega */
     position: absolute;
     top: 60px;
@@ -706,13 +706,15 @@ span {
     flex-direction: column;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     z-index: 999;
+    list-style: none; /* Bullets khatam karne ke liye */
 }
 
-/* Jab click hoga to active class aayegi aur menu open ho jayega */
-.nav-links.active {
+/* Jab click hoga to active class aayegi */
+.nav-list.active {
     display: flex;
+}
 }/* Header Layout Setup */
 .nav-container {
     display: flex;
