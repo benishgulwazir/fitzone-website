@@ -715,7 +715,7 @@ span {
 .nav-list.active {
     display: flex;
 }
-}/* Header Layout Setup */
+/* Header Layout Setup */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -981,4 +981,70 @@ span {
     transition: all 0.3s ease-in-out;
     background-color: #ffffff;
     display: block;
+}/* Final Force Fix for Navbar */
+ul.nav-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #111111;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 999;
+    list-style: none !important;
+    list-style-type: none !important;
+}
+
+ul.nav-list.active {
+    display: flex !important;
+}
+
+ul.nav-list li {
+    list-style: none !important;
+    list-style-type: none !important;
+    margin: 10px 0;
+}
+
+ul.nav-list li a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}/* Mobile Navigation Link Layout Fix */
+ul.nav-list {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    background-color: #111111 !important;
+    flex-direction: column !important;
+    padding: 15px 20px !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 999;
+    list-style: none !important;
+}
+
+ul.nav-list.active {
+    display: flex !important;
+}
+
+ul.nav-list li {
+    list-style: none !important;
+    margin: 8px 0 !important;
+    display: block !important;
+    text-align: left !important;
+}
+
+ul.nav-list li a {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 16px !important;
+    display: block !important;
+    width: 100% !important;
+}
+
+ul.nav-list li a:hover {
+    color: #ff4500 !important;
 }
